@@ -1,0 +1,302 @@
+:root {
+  --header-bg-light-grey:#EEEEEE ;
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+  --basic-red: #FB565A;
+  --basic-red-hover: #E74246;
+  --basic-red-click: #D7373B;
+  --basic-green: #00CA74;
+  --basic-green-hover: #00BC6C;
+  --basic-green-click: #00AA62;
+  --basic-yellow: #EFC849;
+  --basic-yellow-hover: #EAB534;
+  --basic-yellow-click: #E5A722;
+  --basic-text: #283136;
+  --basic-grey-text: #666666;
+  --basic-form-text: #444444;
+  --basic-form-border: #D7DCDE;
+  --basic-form-hover: #B4B9BB;
+  --basic-catalog-border: #4D4D4D;
+  --basic-pagination-stroke: #DBDBDB;
+  --basic-pagination-hover: #DFDFDF;
+  --basic-pagination-click: #D5D5D5;
+  --basic-white-opacity: rgba(256,256,256, 0.3);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Global */
+
+.page-body {
+  margin: 0;
+  padding: 0;
+  min-width: 1440px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--basic-text);
+  background-color: var(--basic-white);
+}
+
+.page-body a {
+  text-decoration: none;
+  color: var(--basic-white)
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header */
+
+.main-header {
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: var(--header-bg-light-grey);
+}
+
+.main-header a {
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+/* Navigation */
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: var(--basic-red);
+}
+.nav a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/*Promo*/
+
+.promo {
+  background-color: var(--header-bg-light-grey);
+}
+
+.promo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.promo-item-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+}
+
+/* Service */
+
+.service-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+/* About */
+
+.about-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about-list-title {
+  font-weight: 700;
+}
+
+.description-title {
+  line-height: 18px;
+}
+
+.description-definition {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.description-definition-sup {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+/* footer */
+
+/* Contacts */
+
+.contacts {
+  line-height: 18px;
+  color: var(--basic-grey-text);
+}
+
+.tel > a{
+  color: var(--basic-grey-text);
+}
+
+/* Socials */
+.socials-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+/* Modal */
+
+.modal-form {
+  font-size: 16px;
+  line-height: 18px;
+  color:  var(--basic-form-text);
+}
+.modal-form input,
+.modal-form textarea {
+  border: 2px solid var(--basic-form-border);
+  border-radius: 3px;
+}
+
+.modal-form input:hover,
+.modal-form textarea:hover {
+  border: 2px solid var(--basic-form-hover);
+}
+
+.modal-form input:focus,
+.modal-form textarea:focus {
+  border: 2px solid var(--basic-black);
+}
+
+.modal-form input:invalid {
+  border: 2px solid var(--basic-red-hover);
+  color: var(--basic-red-hover);
+}
+
+.modal-headline {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 52px;
+}
+
+.form-bold {
+  font-weight: 700;
+}
+
+/*Button */
+
+.button {
+  font:inherit;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--basic-white);
+  line-height: 18px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.button-promo {
+  display: block;
+  box-sizing: border-box;
+  width: 240px;
+  height: 50px;
+  text-align: center;
+  padding-left:54;
+  padding-right:54;
+  background-color: var(--basic-red);
+}
+
+.button-promo:hover,
+.button-color-red:hover,
+.button-contacts:hover,
+.button-promo:focus,
+.button-color-red:focus,
+.button-contacts:focus {
+  background-color: var(--basic-red-hover);
+}
+
+.button-promo:active,
+.button-color-red:active,
+.button-contacts:active {
+  background-color: var(--basic-red-click);
+  color: var(--basic-white-opacity);
+
+}
+
+.button-services {
+  padding-left:39px;
+  padding-right:40px;
+}
+
+.button-color-red {
+  background-color: var(--basic-red);
+}
+
+.button-color-green {
+  background-color: var(--basic-green);
+}
+
+.button-color-green:hover,
+.button-color-green:focus {
+  background-color: var(--basic-green-hover);
+}
+
+.button-color-green:active {
+  background-color: var(--basic-green-click);
+  color: var(--basic-white-opacity);
+}
+
+.button-color-yellow {
+  background-color: var(--basic-yellow);
+}
+
+.button-color-yellow:hover,
+.button-color-yellow:focus {
+  background-color: var(--basic-yellow-hover);
+}
+
+.button-color-yellow:active {
+  background-color: var(--basic-yellow-click);
+  color: var(--basic-white-opacity);
+}
+
+.button-contacts {
+  padding-left: 44px;
+  padding-right: 44px;
+  background-color: var(--basic-red);
+}
+
+.button-modal {
+  border-style: none;
+  padding-right: 83px;
+  padding-left: 83px;
+}
