@@ -98,6 +98,10 @@
   background-color: var(--header-bg-light-grey);
 }
 
+.header-logo {
+  margin-top: 49px;
+}
+
 .main-header .container {
   display: grid;
   grid-template-columns: 160px 1fr min-content;
@@ -109,8 +113,17 @@
 }
 
 /* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  margin-left: 202px;
+}
 
 .nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -145,7 +158,6 @@
 
 .promo-list-item {
   height: 431px;
-  outline: auto;
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -298,10 +310,10 @@ promo-item-text {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  outline: 2px solid salmon;
   background-image: url(/img/nerds-illustration\ 1.jpg);
   background-repeat: no-repeat;
   background-position: top right 16px;
+  margin-bottom: 73px;
 }
 
 .about-title {
@@ -318,24 +330,48 @@ promo-item-text {
 }
 
 .features-list-title {
-  grid-column: 1 / -1;
+  grid-column: 1 / 2;
   font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.features-list {
+  grid-column: 1 / 2;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .about-list-title {
   grid-column: 3 / -1;
+  grid-row: 3 / 4;
   font-weight: 700;
 }
 
 .about-desc-list {
+  margin: 0;
+  padding: 0;
   grid-column: 3 / -1;
+  width: 360px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about-desc-item {
+  display: flex;
+  flex-direction: column;
 }
 
 .description-title {
+  order: 2;
   line-height: 18px;
+  grid-row: 2 / -1;
 }
 
 .description-definition {
+  order: 1;
+  margin: 0;
   font-weight: 700;
   font-size: 45px;
   line-height: 64px;
@@ -390,6 +426,11 @@ promo-item-text {
   color: var(--basic-grey-text);
 }
 
+/* Map */
+.map {
+  margin-bottom: 68px;
+}
+
 /* Socials */
 
 .socials {
@@ -398,14 +439,16 @@ promo-item-text {
 }
 
 .socials-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .socials-title {
+  margin: 0;
+  padding: 0;
   grid-column: 2 / -1;
   font-weight: 700;
   font-size: 36px;
