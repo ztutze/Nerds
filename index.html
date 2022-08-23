@@ -309,34 +309,43 @@
       </div>
     </footer>
 
-    <section class="modal">
+    <section class="modal visually-hidden">
       <h2 class="modal-headline">Напишите нам</h2>
       <form class="modal-form" method="post" action="#">
-        <p>
-          <label class="form-bold"
+        <div class="input-wrapper">
+          <label class="modal-label"
             >Ваше имя:
-            <input type="text" name="username" placeholder="Имя Фамилия" />
+            <input
+              class="modal-input"
+              type="text"
+              name="username"
+              placeholder="Имя Фамилия"
+            />
           </label>
-          <label class="form-bold"
+          <label class="modal-label"
             >Ваш email:
-            <input type="text" name="email" placeholder="email@example.com" />
+            <input
+              class="modal-input"
+              type="text"
+              name="email"
+              placeholder="email@example.com"
+            />
           </label>
-        </p>
-        <p>
-          <label class="form-bold" for="comment">Текст письма:</label>
-        </p>
+        </div>
+        <label class="modal-label" for="comment">Текст письма:</label>
         <textarea
+          class="modal-textarea"
           name="comment"
           id="comment"
           placeholder="В свободной форме"
         ></textarea>
-        <p>
-          <button class="button button-modal button-color-red" type="submit">
-            Отправить
-          </button>
-        </p>
+        <button class="button button-modal button-color-red" type="submit">
+          Отправить
+        </button>
       </form>
-      <button class="close">закрыть</button>
+      <button class="modal-close">
+        <span class="visually-hidden">закрыть</span>
+      </button>
     </section>
   </body>
 </html>

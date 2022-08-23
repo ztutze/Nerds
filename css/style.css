@@ -134,10 +134,19 @@
 .nav-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 45px;
+  /* gap: 45px; */
+  width: 650px;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.nav-list li {
+  margin-bottom: 5px;
+}
+
+.nav-list li:not(:last-child) {
+  margin-right: 45px
 }
 
 .current a {
@@ -173,6 +182,11 @@
 
 /* user nav */
 
+.user-navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .user-navigation-link {
   position: relative;
 }
@@ -180,7 +194,7 @@
 .user-navigation-link::before {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 6px;
   left: -40px;
   width: 15px;
   height: 15px;
@@ -206,7 +220,7 @@
 }
 
 .promo-list-item {
-  height: 431px;
+  min-height: 431px;
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -228,6 +242,7 @@
   padding: 0;
   padding-top: 78px;
   padding-bottom: 25px;
+  max-width: 425px;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
@@ -235,6 +250,7 @@
 }
 
 promo-item-text {
+  max-width: 425px;
   padding: 0;
   margin: 0;
   margin-bottom: 38px;
@@ -243,6 +259,7 @@ promo-item-text {
 .button-promo {
   display: block;
   margin-top: 38px;
+  margin-bottom: 80px;
   box-sizing: border-box;
   width: 240px;
   height: 50px;
@@ -419,6 +436,7 @@ promo-item-text {
   grid-column: 1 / -1;
   margin: 0;
   padding: 0;
+  max-width: 780px;
   margin-top: 34px;
   margin-bottom: 12px;
   font-weight: 500;
@@ -428,6 +446,7 @@ promo-item-text {
 
 .about-text {
   grid-column: 1 / -1;
+  max-width: 780px;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
@@ -699,6 +718,7 @@ promo-item-text {
 }
 
 .socials-title {
+  max-width: 750px;
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
@@ -710,6 +730,7 @@ promo-item-text {
 .socials-text {
   margin: 0;
   padding: 0;
+  max-width: 750px;
 }
 
 /* Catalog */
@@ -1260,9 +1281,9 @@ promo-item-text {
 .modal {
   width: 960px;
   height: 590px;
-  /* position: absolute; */
-  /* top: 15%; */
-  /* left: 25%; */
+  position: fixed;
+  top: 15%;
+  left: 25%;
   background-color: var(--basic-white);
   box-sizing: border-box;
   padding-top: 63px;
@@ -1299,6 +1320,7 @@ promo-item-text {
 
 .modal-textarea {
   margin-top: 9px;
+  margin-bottom: 47px;
   width: 760px;
   height: 118px;
 }
@@ -1337,9 +1359,24 @@ promo-item-text {
   border: none;
   width: 21px;
   height: 21px;
-  background-color: red;
-
+  position: relative;
+  bottom: 425px;
+  left: 759px;
+  background-color: var(--basic-white);
+  background-image: url(/img/cross-close.svg);
+  opacity: 0.3;
+  cursor: pointer;
 }
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.1;
+}
+
 
 .button-catalog {
   background-color: var(--basic-red);
