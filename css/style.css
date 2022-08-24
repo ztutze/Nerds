@@ -767,9 +767,9 @@
 
 .filter {
   grid-column: 1 / 2;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .filters-title {
@@ -784,6 +784,9 @@
 }
 
 .filters-title-price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
   margin-bottom: 48px;
 }
 
@@ -793,6 +796,10 @@
   line-height: 20px;
   margin: 0;
   padding: 0;
+}
+
+.filters-options li:last-child {
+  margin-bottom: 47px;
 }
 
 .filters-options label {
@@ -813,13 +820,6 @@
 .range-filter {
   width: 260px;
   margin-bottom: 34px;
-}
-
-.filters-price legend {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  text-transform: uppercase;
 }
 
 .range-controls {
