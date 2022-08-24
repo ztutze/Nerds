@@ -249,10 +249,10 @@
   color: var(--basic-black);
 }
 
-promo-item-text {
-  max-width: 425px;
+.promo-item-text {
   padding: 0;
   margin: 0;
+  max-width: 425px;
   margin-bottom: 38px;
 }
 
@@ -613,10 +613,10 @@ promo-item-text {
   line-height: 18px;
   color: var(--basic-grey-text);
   width: 319px;
-  height: 308px;
   box-sizing: border-box;
   padding: 49px 50px 47px;
   background-color: var(--basic-white);
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
 }
 
 .contacts-title {
@@ -783,6 +783,10 @@ promo-item-text {
   text-transform: uppercase;
 }
 
+.filters-title-price {
+  margin-bottom: 48px;
+}
+
 .filters-options {
   border: none;
   font-size: 16px;
@@ -808,6 +812,7 @@ promo-item-text {
 
 .range-filter {
   width: 260px;
+  margin-bottom: 34px;
 }
 
 .filters-price legend {
@@ -996,11 +1001,14 @@ promo-item-text {
 
 .sort-wrapper {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
 }
 
 .sort {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 5px;
   list-style: none;
   margin: 0;
@@ -1017,11 +1025,6 @@ promo-item-text {
   border: none;
   background-color: transparent;
   color: var(--basic-black-opacity);
-}
-
-.button-sort-current {
-  color: var(--basic-black);
-  opacity: 1;
 }
 
 .button-sort:hover,
@@ -1056,6 +1059,11 @@ promo-item-text {
   opacity: 0.3;
 }
 
+.button-sort-current {
+  color: var(--basic-black);
+  opacity: 1;
+}
+
 .filters-disabled {
   color: var(--basic-text-opaticy);
 }
@@ -1073,6 +1081,7 @@ promo-item-text {
 .button-filters {
   box-sizing: border-box;
   width: 260px;
+  height: 50px;
   border: none;
   border-color: var(--header-bg-light-grey);
   color: var(--basic-black);
@@ -1092,7 +1101,7 @@ promo-item-text {
 
 .catalog {
   grid-column: 2 / -1;
-  /* margin-left: 100px; */
+  margin-left: 95px;
 }
 
 .catalog-list {
