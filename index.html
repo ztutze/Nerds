@@ -58,7 +58,7 @@
               </p>
               <a class="button button-promo" href="#">Узнать больше</a>
             </li>
-            <li class="promo-list-item promo-item-slide2 visually-hidden">
+            <li class="promo-list-item promo-item-slide2">
               <p class="promo-item-title">
                 Любим математику<br />как никто другой
               </p>
@@ -68,7 +68,7 @@
               </p>
               <a class="button button-promo" href="#">Узнать больше</a>
             </li>
-            <li class="promo-list-item promo-item-slide3 visually-hidden">
+            <li class="promo-list-item promo-item-slide3">
               <p class="promo-item-title">Только ночь,<br />только хардкор</p>
               <p class="promo-item-text">
                 Работать днем, как все? Мы против этого.<br />Ближе к полуночи
@@ -178,24 +178,29 @@
           <h2 class="visually-hidden">Наши клиенты</h2>
           <ul class="client-list">
             <li class="client-list-item">
-              <img
-                class="img client-img"
-                src="img/client_htmlacademy.svg"
-                width="199"
-                height="57"
-                alt="Логотип нашего клиента HTML Academy"
-              />
+              <a href="#">
+                <img
+                  class="img client-img"
+                  src="img/client_htmlacademy.svg"
+                  width="199"
+                  height="57"
+                  alt="Логотип нашего клиента HTML Academy"
+                />
+              </a>
             </li>
             <li class="client-list-item">
-              <img
-                class="img client-img"
-                src="img/client_borodinski.png"
-                width="209"
-                height="90"
-                alt="Логотип нашего клиента Borodinski"
-              />
+              <a href="#">
+                <img
+                  class="img client-img"
+                  src="img/client_borodinski.png"
+                  width="209"
+                  height="90"
+                  alt="Логотип нашего клиента Borodinski"
+                />
+              </a>
             </li>
             <li class="client-list-item">
+              <a href="#">
               <img
                 class="img client-img"
                 src="img/client_pink.png"
@@ -203,8 +208,10 @@
                 height="52"
                 alt="Логотип нашего клиента Pink"
               />
+            </a>
             </li>
             <li class="client-list-item">
+              <a href="#">
               <img
                 class="img client-img"
                 src="img/client_mishka.png"
@@ -212,6 +219,7 @@
                 height="84"
                 alt="Логотип нашего клиента MISHKA"
               />
+              </a>
             </li>
           </ul>
         </section>
@@ -249,6 +257,8 @@
               <a class="social-button vk-button" href="#"
                 ><span class="visually-hidden">Вконтакте</span>
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="27"
                   height="15"
                   viewBox="0 0 27 15"
@@ -266,6 +276,8 @@
               <a class="social-button fb-button" href="#"
                 ><span class="visually-hidden">Фейсбук</span>
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="12"
                   height="22"
                   viewBox="0 0 12 22"
@@ -283,6 +295,8 @@
               <a class="social-button inst-button" href="#"
                 ><span class="visually-hidden">Инстаграм</span>
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="21"
                   height="21"
                   viewBox="0 0 21 21"
@@ -309,14 +323,14 @@
       </div>
     </footer>
 
-    <section class="modal visually-hidden">
+    <section class="modal">
       <h2 class="modal-headline">Напишите нам</h2>
       <form class="modal-form" method="post" action="#">
         <div class="input-wrapper">
           <label class="modal-label"
             >Ваше имя:
             <input
-              class="modal-input"
+              class="modal-input modal-input-username"
               type="text"
               name="username"
               placeholder="Имя Фамилия"
@@ -325,7 +339,7 @@
           <label class="modal-label"
             >Ваш email:
             <input
-              class="modal-input"
+              class="modal-input modal-input-login"
               type="text"
               name="email"
               placeholder="email@example.com"
@@ -344,8 +358,9 @@
         </button>
       </form>
       <button class="modal-close">
-        <span class="visually-hidden">закрыть</span>
+        <span class="visually-hidden">Закрыть модальное окно</span>
       </button>
     </section>
+    <script src="/js/script.js"></script>
   </body>
 </html>

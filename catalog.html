@@ -58,6 +58,7 @@
               class="filter"
               method="get"
               action="https://echo.htmlacademy.ru"
+              target="_blank"
             >
               <fieldset class="filters-price filters-options">
                 <legend class="filters-title filters-title-price">Стоимость:</legend>
@@ -227,7 +228,7 @@
 
             <ul class="catalog-list">
               <li class="catalog-item">
-                <article class="card-container">
+                <article class="card-container" tabindex="0">
                   <div class="card-bar">
                     <ul class="circle-container">
                       <li class="card-bar-circle"></li>
@@ -246,14 +247,14 @@
                       <p class="catalog-text">
                         Информационный сайт<br />для туристов
                       </p>
-                      <a class="button button-catalog" href="#">9 900 ₽</a>
+                      <a class="button button-catalog" href="#" aria-label="Добавить сайт Седона в корзину">9 900 ₽</a>
                     </div>
                   </div>
                 </article>
               </li>
 
               <li class="catalog-item">
-                <article class="card-container">
+                <article class="card-container" tabindex="0">
                   <div class="card-bar">
                     <ul class="circle-container">
                       <li class="card-bar-circle"></li>
@@ -275,14 +276,14 @@
                       <p class="catalog-text">
                         Продуктовый лендинг<br />приложения для iOS и Android
                       </p>
-                      <a class="button button-catalog" href="#">9 900 ₽</a>
+                      <a class="button button-catalog" href="#" aria-label="Добавить сайт Pink App в корзину">9 900 ₽</a>
                     </div>
                   </div>
                 </article>
               </li>
 
               <li class="catalog-item">
-                <article class="card-container">
+                <article class="card-container" tabindex="0">
                   <div class="card-bar">
                     <ul class="circle-container">
                       <li class="card-bar-circle"></li>
@@ -301,14 +302,14 @@
                       <p class="catalog-text">
                         Сайт салона красоты.<br />Для мужчин, да.
                       </p>
-                      <a class="button button-catalog" href="#">9 900 ₽</a>
+                      <a class="button button-catalog" href="#" aria-label="Добавить сайт Барбершоп Бородинский в корзину">9 900 ₽</a>
                     </div>
                   </div>
                 </article>
               </li>
 
               <li class="catalog-item">
-                <article class="card-container">
+                <article class="card-container" tabindex="0">
                   <div class="card-bar">
                     <ul class="circle-container">
                       <li class="card-bar-circle"></li>
@@ -327,14 +328,14 @@
                       <p class="catalog-text">
                         Интернет-магазин<br />вязаных игрушек
                       </p>
-                      <a class="button button-catalog" href="#">9 900 ₽</a>
+                      <a class="button button-catalog" href="#" aria-label="Добавить сайт Мишка в корзину">9 900 ₽</a>
                     </div>
                   </div>
                 </article>
               </li>
 
               <li class="catalog-item">
-                <article class="card-container">
+                <article class="card-container" tabindex="0">
                   <div class="card-bar">
                     <ul class="circle-container">
                       <li class="card-bar-circle"></li>
@@ -353,14 +354,14 @@
                       <p class="catalog-text">
                         Лендинг курсов повышения<br />квалификации
                       </p>
-                      <a class="button button-catalog" href="#">9 900 ₽</a>
+                      <a class="button button-catalog" href="#" aria-label="Добавить сайт A Plus в корзину">9 900 ₽</a>
                     </div>
                   </div>
                 </article>
               </li>
 
               <li class="catalog-item">
-                <article class="card-container">
+                <article class="card-container" tabindex="0">
                   <div class="card-bar">
                     <ul class="circle-container">
                       <li class="card-bar-circle"></li>
@@ -379,7 +380,7 @@
                       <p class="catalog-text">
                         Промо-сайт производителя<br />крафтового кваса
                       </p>
-                      <a class="button button-catalog" href="#">9 900 ₽</a>
+                      <a class="button button-catalog" href="#" aria-label="Добавить сайт Кваст в корзину">9 900 ₽</a>
                     </div>
                   </div>
                 </article>
@@ -440,6 +441,8 @@
               <a class="social-button vk-button" href="#"
                 ><span class="visually-hidden">Вконтакте</span>
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="27"
                   height="15"
                   viewBox="0 0 27 15"
@@ -457,6 +460,8 @@
               <a class="social-button fb-button" href="#"
                 ><span class="visually-hidden">Фейсбук</span>
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="12"
                   height="22"
                   viewBox="0 0 12 22"
@@ -474,6 +479,8 @@
               <a class="social-button inst-button" href="#"
                 ><span class="visually-hidden">Инстаграм</span>
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="21"
                   height="21"
                   viewBox="0 0 21 21"
@@ -500,14 +507,14 @@
       </div>
     </footer>
 
-    <section class="modal visually-hidden">
+    <section class="modal">
       <h2 class="modal-headline">Напишите нам</h2>
-      <form class="modal-form" method="post" action="#">
+      <form class="modal-form" method="post" action="#" target="_blank">
         <div class="input-wrapper">
           <label class="modal-label"
             >Ваше имя:
             <input
-              class="modal-input"
+              class="modal-input modal-input-username"
               type="text"
               name="username"
               placeholder="Имя Фамилия"
@@ -516,7 +523,7 @@
           <label class="modal-label"
             >Ваш email:
             <input
-              class="modal-input"
+              class="modal-input modal-input-login"
               type="text"
               name="email"
               placeholder="email@example.com"
@@ -535,8 +542,9 @@
         </button>
       </form>
       <button class="modal-close">
-        <span class="visually-hidden">закрыть</span>
+        <span class="visually-hidden">Закрыть модальное окно</span>
       </button>
     </section>
+    <script src="/js/script.js"></script>
   </body>
 </html>
